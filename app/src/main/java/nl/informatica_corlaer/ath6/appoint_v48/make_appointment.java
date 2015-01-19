@@ -3,7 +3,6 @@ package nl.informatica_corlaer.ath6.appoint_v48;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -13,12 +12,12 @@ import android.view.ViewGroup;
 import android.os.Build;
 
 
-public class Agenda extends Activity {
+public class make_appointment extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_agenda);
+        setContentView(R.layout.activity_make_appointment);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -30,7 +29,7 @@ public class Agenda extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_agenda, menu);
+        getMenuInflater().inflate(R.menu.menu_make_appointment, menu);
         return true;
     }
 
@@ -60,13 +59,8 @@ public class Agenda extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_agenda, container, false);
+            View rootView = inflater.inflate(R.layout.fragment_make_appointment, container, false);
             return rootView;
         }
-    }
-    public void make_appointment(View view)
-    {
-        Intent intent = new Intent(Agenda.this, make_appointment.class);
-        startActivity(intent);
     }
 }

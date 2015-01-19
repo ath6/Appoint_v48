@@ -15,4 +15,12 @@
     <string name="title_activity_calendar">Calendar</string>
     <string name="title_activity_friends">Friends</string>
 
+    <!-- CONTENT FRIENDS PAGE -->
+    <string name="friends_content">Oops, you don\'t have friends!</string>
+    <string name="title_activity_make_appointment">Add a new appointment!</string>
+
+    <!-- CONTENT AGENDA PAGE -->
+    <string name="agenda_content">Here you can find all your appointments!</string>
+
+
 </resources>

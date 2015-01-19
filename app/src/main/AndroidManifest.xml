@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="nl.informatica_corlaer.ath6.appoint_v48.Menu_Appoint" />
         </activity>
+        <activity
+            android:name=".make_appointment"
+            android:label="@string/title_activity_make_appointment"
+            android:parentActivityName=".Menu_Appoint" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="nl.informatica_corlaer.ath6.appoint_v48.Menu_Appoint" />
+        </activity>
     </application>
 
 </manifest>
