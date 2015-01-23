@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.Toast;
 
 
 public class make_appointment extends Activity {
@@ -45,6 +46,7 @@ public class make_appointment extends Activity {
             return true;
         }
 
+
         return super.onOptionsItemSelected(item);
     }
 
@@ -62,5 +64,9 @@ public class make_appointment extends Activity {
             View rootView = inflater.inflate(R.layout.fragment_make_appointment, container, false);
             return rootView;
         }
+    }
+    public void appointment_added(View v){
+        Toast toast= Toast.makeText(this, "Appointment added!", Toast.LENGTH_LONG);
+        toast.show();
     }
 }

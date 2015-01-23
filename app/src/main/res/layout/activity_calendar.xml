@@ -10,10 +10,18 @@
         android:layout_height="fill_parent"
         android:layout_gravity="center">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal" />
+
         <CalendarView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/calendarView"
+            android:id="@+id/Adolf"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 </FrameLayout>

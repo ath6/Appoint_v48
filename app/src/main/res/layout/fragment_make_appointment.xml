@@ -20,19 +20,34 @@
         android:layout_below="@+id/textView2"
         android:layout_alignParentStart="true" />
 
-    <DatePicker
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/datePicker"
-        android:layout_alignTop="@+id/date"
+        android:id="@+id/editText"
+        android:layout_below="@+id/date"
+        android:layout_marginTop="64dp"
         android:layout_alignParentEnd="true" />
 
-    <TimePicker
+    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/timePicker"
+        android:text="Add appointment!"
+        android:id="@+id/button2"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="70dp" />
+        android:layout_alignParentEnd="true"
+        android:onClick="appointment_added"
+        android:background="#ff5f00"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/editText"
+        android:layout_toStartOf="@+id/editText" />
+
 
 </RelativeLayout>
