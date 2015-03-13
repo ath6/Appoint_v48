@@ -18,6 +18,10 @@ import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
 
 
 public class Menu_Appoint extends Activity
@@ -152,6 +156,14 @@ public class Menu_Appoint extends Activity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
+
+    public static void onStart(String [] args){
+        DBConnect connect = new DBConnect();
+        connect.getData();
+    }
+
+
+
 
 }
 

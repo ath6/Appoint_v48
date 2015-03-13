@@ -10,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import java.util.ArrayList;
+
 
 
 public class Friends extends Activity {
@@ -23,7 +25,10 @@ public class Friends extends Activity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
     }
+
+
 
 
     @Override
@@ -47,6 +52,8 @@ public class Friends extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
     /**
      * A placeholder fragment containing a simple view.
